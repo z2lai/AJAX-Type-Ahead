@@ -15,7 +15,8 @@ fetch(endpoint)
   .then(json => places.push(...json));
 ```
 
-Using Regular Expressions to filter the list of cities to those that contain the search string
+Using Regular Expressions and String.prototype.match()
+to filter the list of cities to those that contain the search string
 
 ```
 function findMatches(searchString, places) {
